@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mobidevelop.spl.widget.SplitPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="true"
+    app:orientation="vertical"
+    android:id="@+id/split_pane_layout"
+    app:splitterBackground="@color/colorPrimaryDark"
+    app:splitterDraggingBackground="@color/colorPrimaryDark"
+    app:splitterPosition="1%"
+    app:splitterSize="12dip">
+
+    <!--   <RelativeLayout
+           android:id="@+id/layout_main_header"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+           android:background="@color/colorPrimaryDark">
+
+           <com.fanavartech.android.taneem.TextViewPlus
+               android:id="@+id/tv_name_section_book"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_centerInParent="true"
+               android:layout_marginLeft="4dp"
+               android:layout_marginRight="4dp"
+               android:layout_toRightOf="@+id/img_arrow_forward"
+               android:text="تفسیر تنعیم، جزء 1"
+               android:textColor="@color/white"
+               app:customFont="fonts/IRANSans_Light.ttf" />
+
+           <ImageView
+               android:id="@+id/img_arrow_forward"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:layout_marginLeft="4dp"
+               android:layout_toRightOf="@+id/img_arrow_back"
+               android:clickable="true"
+
+               android:src="@drawable/ic_arrow_forward" />
+
+           <ImageView
+               android:id="@+id/img_arrow_back"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_centerInParent="true"
+               android:layout_marginLeft="4dp"
+               android:layout_marginRight="4dp"
+               android:clickable="true"
+               android:padding="4dp"
+               android:src="@drawable/ic_arrow_back" />
+               android:layout_below="@+id/layout_main_header"
+       </RelativeLayout>-->
+
+    <FrameLayout
+        android:id="@+id/frame_layout_content_sound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout_content_pdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/frame_layout_content_sound"
+        android:layout_centerHorizontal="true" />
+</com.mobidevelop.spl.widget.SplitPaneLayout>

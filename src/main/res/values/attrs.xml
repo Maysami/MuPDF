@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- for change font textView-->
+    <declare-styleable name="TextViewPlus">
+        <attr name="customFont" format="string" />
+    </declare-styleable>
+</resources>
